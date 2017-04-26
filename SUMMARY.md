@@ -1,3 +1,6 @@
 # Summary
 
-* [First Chapter](chapter1.md)
+* [Introduction](README.md)
+* [Sketchpacks for macOS](chapter1.md)
+* [Sketchpacks Relay](sketchpacks-relay.md)
+
