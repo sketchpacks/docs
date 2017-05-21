@@ -1,0 +1,6 @@
+{
+  "variables": {
+    "relayURL": "https://github.com/integration/sketchpacks-relay",
+    "apiDocsUrl": "http://docs.sketchpacks.apiary.io"
+  }
+}

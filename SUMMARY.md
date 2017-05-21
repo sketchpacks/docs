@@ -10,7 +10,6 @@
   * [Publishing Sketch plugins](./developers/publishing.md)
     * [Essentials](./developers/publishing/essentials.md)
     * [Best Practices](./developers/publishing/best-practices.md)
-  * [Serving updates for your Sketch plugins](./developers/publishing-sketch-plugins.md)
-  * [appCast support](./developers/sketchpacks-relay-appcast-support.md)
+    * [Providing Plugin Updates](./developers/providing-updates.md)
 
-* [Sketchpacks API Reference](./http://docs.sketchpacks.apiary.io)
+* [Sketchpacks API Reference](http://docs.sketchpacks.apiary.io)
