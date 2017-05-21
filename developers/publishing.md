@@ -1,4 +1,4 @@
-# Publishing
+# Publishing Sketch Plugins
 
 Publishing your plugin to the Sketchpacks Registry can be done in three steps:
 
