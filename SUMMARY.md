@@ -1,7 +1,5 @@
 # Summary
 
-* [Welcome](welcome.md)
-
 * [Essentials](essentials/intro.md)
   * [Auto-updating plugins](essentials/auto-updating-plugins.md)
   * [Manually updating plugins](essentials/manually-updating-plugins.md)
@@ -13,4 +11,4 @@
   * [Serving updates for your Sketch plugins](developers/publishing-sketch-plugins.md)
   * [appCast support](developers/sketchpacks-relay-appcast-support.md)
 
-* [API Reference](http://docs.sketchpacks.apiary.io)
+* [Sketchpacks API Reference](http://docs.sketchpacks.apiary.io)
