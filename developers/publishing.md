@@ -1,26 +1,14 @@
 # Publishing
 
-Before you publish your plugins, make sure they meet the essential criteria below.
+Publishing your plugin to the Sketchpacks Registry can be done in three steps:
 
-## Essentials
+1. **Prepare your plugin for distribution** by making sure it has the [essentials](./publishing/essentials.md) needed to be fully searched and discovered.
+2. **Install the Sketchpacks Relay Github Integration** at [https://github.com/integration/sketchpacks-relay](https://github.com/integration/sketchpacks-relay)
+3. **Select Github repos** containing your plugins that you wish to publish.
 
-These rules are designed to protect the data integrity of Sketchpacks, and ensure that all plugins can be correctly installed on Sketch.
+That's it!
 
-They also help ensure a baseline, so that all plugins can be easily checked for updates.
+## Next steps
 
-* Plugins must use valid semantic versioning
-* Plugins must have a valid manifest.json file
-* Plugins must have a globally unique identifier
-
-For more information, see the topics below on Semantic Versioning, Plugin Manifests, and Globally Unique Identifiers.
-
-## Best practices
-
-Now that your plugins have met the minimum requirements, let’s go over some ways to increase their exposure on the registry.
-
-* Plugins should have a detailed readme.md file
-* Plugins should have a detailed manifest.json file
-* Plugins should have tagged releases with change logs
-* Plugins should have zipped release assets
-
-For more information, see the topics below on Plugin Readmes, Plugin Manifests, Plugin Releases, and Plugin Release Assets.
+* Read more on [Publishing Essentials](./publishing/essentials.md)
+* Read [Publishing Best Practices](./publishing/best-practices.md)
