@@ -1,4 +1,4 @@
-# Providing Plugin updates
+# Providing Plugin Updates
 
 With [Sketchpacks Relay]({{ book.relayURL }}) installed on your plugins' Github repos, providing updates is simple.
 
