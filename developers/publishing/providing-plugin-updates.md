@@ -15,7 +15,7 @@ Allowing your users to apply updates from within Sketch is done by simply adding
 {
   name: "Awesome Sketch Plugin",
   identifier: "com.sketchpacks.awesome-plugin",
-  appcastURL: "https://api.sketchpacks.com/v1/plugins/com.sketchpacks.awesome-plugin/appcast"  
+  appcast: "https://api.sketchpacks.com/v1/plugins/com.sketchpacks.awesome-plugin/appcast"  
 }
 ```
 You may use the Appcast API Endpoint provided by the [Sketchpacks API]({{ book.apiDocsUrl }}) to serve your plugins' Appcast feed.
