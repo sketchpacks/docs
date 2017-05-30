@@ -6,6 +6,8 @@ Publishing your plugin to the Sketchpacks Registry can be done in three steps:
 2. **Install Sketchpacks Relay**, our [Github Integration]({{ book.relayURL }}) that keeps your plugins up-to-date in our registry
 3. **Publish release assets** on Github to serve your plugin and it's updates
 
+**Bonus** [Add badges](./publishing/badges.md) to your README.md
+
 That's it!
 
 ## Next steps
@@ -13,3 +15,4 @@ That's it!
 * [Publishing Essentials](./publishing/essentials.md)
 * [Publishing Best Practices](./publishing/best-practices.md)
 * [Providing Plugin Updates](./publishing/providing-plugin-updates.md)
+* [Badges](./publishing/badges.md)
