@@ -6,7 +6,7 @@ With [Sketchpacks Relay]({{ book.relayURL }}) installed on your plugins' Github 
 
 The latest [Sketch beta](http://sketchplugins.com/d/229-updating-plugins) allows for plugin updates right from within Sketch itself. 👏🏽
 
-Allowing your users to apply updates from within Sketch is done by simply adding a new property, `appcastURL`, to your `manifest.json` file.
+Allowing your users to apply updates from within Sketch is done by simply adding a new property, `appcast`, to your `manifest.json` file.
 
 
 ```
