@@ -33,3 +33,11 @@ Sketchpacks will provide the users' desired level of updates by setting their lo
 ### Resources
 
 * Sketchpacks API - {{ book.apiDocsUrl }}
+
+---
+
+###### Caught a mistake or what to contribute to the documentation? [Edit this page on Github](https://github.com/sketchpacks/docs/blob/master/developers/publishing/providing-plugin-updates.md).
+
+###### Change Log
+
+* 2017-05-30 - Change `appcastURL` to `appcast` to [prevent Sketch from crashing](http://sketchplugins.com/d/243-plugin-updating-important-update).
