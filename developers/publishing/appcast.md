@@ -53,3 +53,23 @@ Viewing the raw body of the Appcast API endpoint provides a similar XML shape as
 ```
 
 The `<channel>` enumerates each of [Copy Framer Code's releases](https://github.com/perrysmotors/copy-framer-code/releases) from Github with version specific download URLs for each enclosure.
+
+### Missing a previous version?
+
+Backfilling previous versions is done by [tagging a past commit](https://git-scm.com/book/en/v2/Git-Basics-Tagging#_tagging_later) in your history.
+
+Say for example, you forgot to tag your plugin at `v2.0.0`, which was fixing Bug A. Just find the commit checksum (or SHA) where you commited the fix for Bug A (e.g. `9fceb02`), and specify it at the end of the `tag` command.
+
+```
+$ git tag -a v1.2 9fceb02
+```
+
+**Note:** The `version` key's value defined within your plugin's manifest should match your lightweight or annotated tag.
+
+Now push those commits to Github and begin [drafting and publishing your releases](https://help.github.com/articles/creating-releases/).
+
+```
+$ git push --tags
+```
+
+By publishing your releases, they'll immediately become available from your plugin's Appcast feed URL.
