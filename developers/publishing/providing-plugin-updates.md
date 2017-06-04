@@ -18,7 +18,7 @@ Allowing your users to apply updates from within Sketch is done by simply adding
   appcast: "https://api.sketchpacks.com/v1/plugins/com.sketchpacks.awesome-plugin/appcast"  
 }
 ```
-You may use the Appcast API Endpoint provided by the [Sketchpacks API]({{ book.apiDocsUrl }}) to serve your plugins' Appcast feed.
+You may use the Appcast API Endpoint provided by the [Sketchpacks API]({{ book.apiDocsUrl }}) to [serve your plugins' Appcast feed](./appcast.md).
 
 All your semantically versioned release assets published on Github will be available to all Appcast feed consumers.
 
