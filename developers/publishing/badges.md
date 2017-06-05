@@ -25,3 +25,33 @@ Display your plugin's latest version.
 ```markdown
 [![Download from Sketchpacks.com](https://badges.sketchpacks.com/plugins/IDENTIFIER/version.svg)](https://api.sketchpacks.com/v1/plugins/IDENTIFIER/download)
 ```
+
+## Total Downloads
+
+[![View on Sketchpacks.com](https://badges.sketchpacks.com/plugins/com.example.sketch.batch-create-symbols/downloads/total.svg)](https://api.sketchpacks.com/v1/plugins/com.example.sketch.batch-create-symbols)
+
+Display all-time downloads count.
+
+```markdown
+[![View on Sketchpacks.com](https://badges.sketchpacks.com/plugins/IDENTIFIER/downloads/total.svg)](https://sketchpacks.com/GITHUB_HANDLE/GITHUB_REPO_NAME)
+```
+
+## Monthly Downloads
+
+[![View on Sketchpacks.com](https://badges.sketchpacks.com/plugins/com.example.sketch.batch-create-symbols/downloads/monthly.svg)](https://api.sketchpacks.com/v1/plugins/com.example.sketch.batch-create-symbols)
+
+Display monthly downloads count.
+
+```markdown
+[![View on Sketchpacks.com](https://badges.sketchpacks.com/plugins/IDENTIFIER/downloads/monthly.svg)](https://sketchpacks.com/GITHUB_HANDLE/GITHUB_REPO_NAME)
+```
+
+## Weekly Downloads
+
+[![View on Sketchpacks.com](https://badges.sketchpacks.com/plugins/com.example.sketch.batch-create-symbols/downloads/weekly.svg)](https://api.sketchpacks.com/v1/plugins/com.example.sketch.batch-create-symbols)
+
+Display weekly downloads count.
+
+```markdown
+[![View on Sketchpacks.com](https://badges.sketchpacks.com/plugins/IDENTIFIER/downloads/weekly.svg)](https://sketchpacks.com/GITHUB_HANDLE/GITHUB_REPO_NAME)
+```
