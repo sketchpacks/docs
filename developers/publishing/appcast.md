@@ -73,3 +73,8 @@ $ git push --tags
 ```
 
 By publishing your releases, they'll immediately become available from your plugin's Appcast feed URL.
+
+
+---
+
+###### Caught a mistake or what to contribute to the documentation? [Edit this page on Github](https://github.com/sketchpacks/docs/blob/master/developers/publishing/appcast.md).

@@ -11,3 +11,7 @@ The Sketchpacks Appcast API endpoint serves your feed enumerating your published
 
 As of Sketch 45, native plugin updating is available based on
 the [Sparkle](https://sparkle-project.org/) software update framework available which may consume your [Appcast feed](./appcast.md).
+
+---
+
+###### Caught a mistake or what to contribute to the documentation? [Edit this page on Github](https://github.com/sketchpacks/docs/blob/master/developers/publishing/releases.md).

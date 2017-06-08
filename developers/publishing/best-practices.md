@@ -8,3 +8,7 @@ Now that your plugins have met the minimum requirements, let’s go over some wa
 * Plugins should have zipped release assets
 
 For more information, see the topics below on Plugin Readmes, Plugin Manifests, Plugin Releases, and Plugin Release Assets.
+
+---
+
+###### Caught a mistake or what to contribute to the documentation? [Edit this page on Github](https://github.com/sketchpacks/docs/blob/master/developers/publishing/best-practices.md).

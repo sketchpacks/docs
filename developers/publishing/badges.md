@@ -55,3 +55,8 @@ Display weekly downloads count.
 ```markdown
 [![View on Sketchpacks.com](https://badges.sketchpacks.com/plugins/IDENTIFIER/downloads/weekly.svg)](https://sketchpacks.com/GITHUB_HANDLE/GITHUB_REPO_NAME)
 ```
+
+
+---
+
+###### Caught a mistake or what to contribute to the documentation? [Edit this page on Github](https://github.com/sketchpacks/docs/blob/master/developers/publishing/badges.md).

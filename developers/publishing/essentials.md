@@ -10,3 +10,7 @@ They also help ensure a baseline, so that all plugins can be easily checked for 
 * [Distributable plugin bundles](./releases.md) are contained within `.zip` archive enclosures.
 
 For more information, see the topics below on Semantic Versioning, Plugin Manifests, and Globally Unique Identifiers.
+
+---
+
+###### Caught a mistake or what to contribute to the documentation? [Edit this page on Github](https://github.com/sketchpacks/docs/blob/master/developers/publishing/essentials.md).
