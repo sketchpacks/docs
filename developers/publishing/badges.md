@@ -8,7 +8,7 @@ To use these badges, be sure update the example markdown snippets with your info
 
 ## Sketch Compatibility Version
 
-[![Compatible Sketch Version](https://badges.sketchpacks.com/plugins/com.example.sketch.batch-create-symbols/compatibility.svg)](https://sketchpacks.com/demersdesigns/sketch-batch-symbols)
+[![Compatible Sketch Version](https://badges.sketchpacks.com/plugins/com.utom.measure/compatibility.svg)](https://sketchpacks.com/utom/sketch-measure)
 
 Display your plugin's Sketch compatibility version defined in your `manifest.json` file.
 
@@ -18,7 +18,7 @@ Display your plugin's Sketch compatibility version defined in your `manifest.jso
 
 ## Latest Version badge
 
-[![Download from Sketchpacks.com](https://badges.sketchpacks.com/plugins/com.example.sketch.batch-create-symbols/version.svg)](https://api.sketchpacks.com/v1/plugins/com.example.sketch.batch-create-symbols/download)
+[![Download from Sketchpacks.com](https://badges.sketchpacks.com/plugins/com.utom.measure/version.svg)](https://api.sketchpacks.com/v1/plugins/com.utom.measure/download)
 
 Display your plugin's latest version.
 
@@ -28,7 +28,7 @@ Display your plugin's latest version.
 
 ## Total Downloads
 
-[![View on Sketchpacks.com](https://badges.sketchpacks.com/plugins/com.example.sketch.batch-create-symbols/downloads/total.svg)](https://api.sketchpacks.com/v1/plugins/com.example.sketch.batch-create-symbols)
+[![View on Sketchpacks.com](https://badges.sketchpacks.com/plugins/com.utom.measure/downloads/total.svg)](https://api.sketchpacks.com/v1/plugins/com.utom.measure)
 
 Display all-time downloads count.
 
@@ -38,7 +38,7 @@ Display all-time downloads count.
 
 ## Monthly Downloads
 
-[![View on Sketchpacks.com](https://badges.sketchpacks.com/plugins/com.example.sketch.batch-create-symbols/downloads/monthly.svg)](https://api.sketchpacks.com/v1/plugins/com.example.sketch.batch-create-symbols)
+[![View on Sketchpacks.com](https://badges.sketchpacks.com/plugins/com.utom.measure/downloads/monthly.svg)](https://api.sketchpacks.com/v1/plugins/com.utom.measure)
 
 Display monthly downloads count.
 
@@ -48,7 +48,7 @@ Display monthly downloads count.
 
 ## Weekly Downloads
 
-[![View on Sketchpacks.com](https://badges.sketchpacks.com/plugins/com.example.sketch.batch-create-symbols/downloads/weekly.svg)](https://api.sketchpacks.com/v1/plugins/com.example.sketch.batch-create-symbols)
+[![View on Sketchpacks.com](https://badges.sketchpacks.com/plugins/com.utom.measure/downloads/weekly.svg)](https://api.sketchpacks.com/v1/plugins/com.utom.measure)
 
 Display weekly downloads count.
 
