@@ -1,12 +1,14 @@
 # Summary
 
-* [Essentials](./essentials/intro.md)
-  * [Auto-updating plugins](./essentials/auto-updating-plugins.md)
-  * [Manually updating plugins](./essentials/manually-updating-plugins.md)
-  * [Importing plugins](./essentials/importing-plugins.md)
-  * [Exporting plugins](./essentials/exporting-plugins.md)
+* Essentials
+  * [Plugin Management](./manage/intro.md)
+    * [My Library](./manage/my-library.md)
+    * [Updating Plugins](./manage/plugin-updates.md)
+    * [Version Ranges & Locks](./manage/version-ranges-and-locks.md)
+    * [Importing Plugins](./manage/import-plugins.md)
+    * [Exporting Plugins](./manage/export-plugins.md)
 
-* [Developers](./developers/intro.md)
+* Developers
   * [Publishing Sketch plugins](./developers/publishing.md)
     * [Essentials](./developers/publishing/essentials.md)
     * [Releases](./developers/publishing/releases.md)
