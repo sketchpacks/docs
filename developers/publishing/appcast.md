@@ -61,7 +61,17 @@ When you push to your default branch, Sketchpacks is notified and syncs with the
 repository. To update your appcast, simply bump your plugin version and push the
 change to your default branch.
 
-This workflow works well in combination with `SKPM` or `Node.js` version bump commands.
+This workflow works well in combination with the `SKPM` or `Node.js` version bump
+commands. Allowing you an easy way to change your plugins version.
+
+```
+npm version <new-version>
+
+or
+
+skpm publish <new-version> --skip-release
+```
+
 However, you will only ever have one `HEAD` release in your appcast.  If you need
 to support multiple versions for older Sketch clients, you will need to use the `release`
 workflow instead.
@@ -98,9 +108,13 @@ When you create and publish new releases in your github repository, they will
 automatically be added to your appcast feed. An easy way to do this is to
 [use SKPM to publish your releases](https://github.com/skpm/skpm#publish-the-plugin-on-the-registry).
 
+```
+skpm publish <new-version>
+```
+
 The release workflow is great for when you need to retain older versions for users
 on old Sketch clients.  Also, it provides you with the ability to add change logs
-in your appcast feed.
+to your appcast feed.
 
 For example, here is the appcast for [Keys For Sketch](https://sketchpacks.com/exevil/Keys-For-Sketch),
 which is using the `release` workflow:
@@ -212,7 +226,7 @@ By publishing your releases, they'll immediately become available from your plug
 
 #### Removing releases from your appcast
 
-To remove a release from your appcast, simply delete the release from github. The
+To remove a release from your appcast you need to delete the release from github. The
 new state will be synced with Sketchpacks and the releases will be removed from
 your appcast feed.
 
