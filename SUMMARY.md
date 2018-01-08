@@ -16,5 +16,6 @@
     * [Best Practices](./developers/publishing/best-practices.md)
     * [Providing Plugin Updates](./developers/publishing/providing-plugin-updates.md)
       * [Appcast](./developers/publishing/appcast.md)
+  * [Analytics](./developers/analytics.md)
 
 * [Sketchpacks API Reference](http://docs.sketchpacks.apiary.io)
