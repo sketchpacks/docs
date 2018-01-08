@@ -17,8 +17,8 @@ The Sketchpacks API endpoint for a plugins appcast is:
 https://api.sketchpacks.com/v1/plugins/:identifier/appcast
 ```
 
-For example, here is the manifest for the plugin [Copy Framer Code](https://sketchpacks.com/perrysmotors/copy-framer-code),
-which is using the Sketchpacks appcast feed:
+For example, here is an excerpt from the manifest of the [Copy Framer Code](https://sketchpacks.com/perrysmotors/copy-framer-code)
+plugin, which is using the Sketchpacks appcast feed:
 
 ```json
 {
@@ -209,6 +209,12 @@ $ git push --tags
 ```
 
 By publishing your releases, they'll immediately become available from your plugin's Appcast feed URL.
+
+#### Removing releases from your appcast
+
+To remove a release from your appcast, simply delete the release from github. The
+new state will be synced with Sketchpacks and the releases will be removed from
+your appcast feed.
 
 ---
 
