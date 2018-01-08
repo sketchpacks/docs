@@ -4,7 +4,9 @@ The analytics found within your plugin's Insights tab is powered by Sketchpacks 
 
 ## Usage Activity
 
-Measure the average number of users a plugin has per month
+> Requires the use of the [Sketchpacks Appcast](./publishing/appcast.md)
+
+Measure the average number of users a plugin has per month.
 
 ![](/gitbook/images/usage_activity_gauge.png)
 
@@ -19,11 +21,15 @@ This chart provides two key insights:
 
 ## Daily Usage
 
+> Requires the use of the [Sketchpacks Appcast](./publishing/appcast.md)
+
 Measure how many unique users have requested updates
 
 ![](/gitbook/images/daily_usage_chart.png)
 
 ## Daily Velocity
+
+> Requires the use of the [Sketchpacks Appcast](./publishing/appcast.md)
 
 Measure the rate of change in update requests
 
