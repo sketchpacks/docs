@@ -19,3 +19,4 @@ That's it!
 * [Automate your appcast feed](./publishing/appcast.md)
 * [Include change logs in your releases](./publishing/releases.md)
 * [Add status badges to your readme](./publishing/badges.md)
+* [Monitor your plugins activity](./analytics.md)

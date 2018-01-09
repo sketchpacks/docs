@@ -35,6 +35,7 @@ Sketchpacks will provide the users' desired level of updates by setting their lo
 * [Automate your appcast feed](./appcast.md)
 * [Include change logs in your releases](./releases.md)
 * [Add status badges to your readme](./badges.md)
+* [Monitor your plugins activity](./../analytics.md)
 
 ---
 

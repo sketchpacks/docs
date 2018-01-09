@@ -15,6 +15,7 @@ the [Sparkle](https://sparkle-project.org/) software update framework available 
 ### Next Steps
 
 * [Add status badges to your readme](./badges.md)
+* [Monitor your plugins activity](./../analytics.md)
 
 ---
 
