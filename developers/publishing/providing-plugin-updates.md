@@ -30,14 +30,12 @@ If you have [Sketchpacks Relay]({{ book.relayURL }}) installed on your plugins' 
 
 Sketchpacks will provide the users' desired level of updates by setting their lock strength to apply patch- and minor-level updates. Fully unlocked plugins will apply all updates.
 
-### Resources
+### Next Steps
 
-* Sketchpacks API - {{ book.apiDocsUrl }}
+* [Automate your appcast feed](./appcast.md)
+* [Include change logs in your releases](./releases.md)
+* [Add status badges to your readme](./badges.md)
 
 ---
 
 ###### Caught a mistake or what to contribute to the documentation? [Edit this page on Github](https://github.com/sketchpacks/docs/blob/master/developers/publishing/providing-plugin-updates.md).
-
-###### Change Log
-
-* 2017-05-30 - Change `appcastURL` to `appcast` to [prevent Sketch from crashing](http://sketchplugins.com/d/243-plugin-updating-important-update).

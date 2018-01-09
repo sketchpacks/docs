@@ -38,3 +38,10 @@ When a plugin bundle is exported, Sketchpacks will use your plugins identifier a
 the primary key to reference your plugin in the bundle.  When a plugin bundle is
 being imported, Sketchpacks will also use the plugin identifier to lookup the plugin
 in the registry.
+
+### Next Steps
+
+* [Provide plugin updates](./providing-plugin-updates.md)
+* [Automate your appcast feed](./appcast.md)
+* [Include change logs in your releases](./releases.md)
+* [Add status badges to your readme](./badges.md)

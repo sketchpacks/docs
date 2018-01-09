@@ -27,12 +27,13 @@ correctly sorted using Semantic Versioning.
 
 ### Next Steps
 
-* [Publishing Best Practices](./publishing/best-practices.md)
-* [Providing Plugin Updates](./publishing/providing-plugin-updates.md)
-* [Plugin Identifiers](./publishing/identifiers.md)
-* [Appcast Feeds](./publishing/appcast.md)
-* [Releases](./developers/publishing/releases.md)
-* [Badges](./publishing/badges.md)
+* [Publishing best practices](./best-practices.md)
+* [Choose a plugin identifier](./identifiers.md)
+* [Provide plugin updates](./providing-plugin-updates.md)
+* [Automate your appcast feed](./appcast.md)
+* [Include change logs in your releases](./releases.md)
+* [Add status badges to your readme](./badges.md)
+
 
 ---
 

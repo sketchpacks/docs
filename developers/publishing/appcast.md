@@ -230,6 +230,11 @@ To remove a release from your appcast you need to delete the release from github
 new state will be synced with Sketchpacks and the releases will be removed from
 your appcast feed.
 
+### Next Steps
+
+* [Include change logs in your releases](./releases.md)
+* [Add status badges to your readme](./badges.md)
+
 ---
 
 ###### Caught a mistake or what to contribute to the documentation? [Edit this page on Github](https://github.com/sketchpacks/docs/blob/master/developers/publishing/appcast.md).

@@ -41,6 +41,14 @@ another great source of metadata. Sketchpacks will sync with your repositories
 `package.json` and use it for any required information that may be missing from your
 plugins `manifest.json`.
 
+### Next Steps
+
+* [Choose a plugin identifier](./identifiers.md)
+* [Provide plugin updates](./providing-plugin-updates.md)
+* [Automate your appcast feed](./appcast.md)
+* [Include change logs in your releases](./releases.md)
+* [Add status badges to your readme](./badges.md)
+
 ---
 
 ###### Caught a mistake or what to contribute to the documentation? [Edit this page on Github](https://github.com/sketchpacks/docs/blob/master/developers/publishing/best-practices.md).

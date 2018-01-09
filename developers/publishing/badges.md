@@ -56,6 +56,9 @@ Display weekly downloads count.
 [![View on Sketchpacks.com](https://badges.sketchpacks.com/plugins/IDENTIFIER/downloads/weekly.svg)](https://sketchpacks.com/GITHUB_HANDLE/GITHUB_REPO_NAME)
 ```
 
+### Next Steps
+
+* [Monitor your plugins activity](./../analytics.md)
 
 ---
 
