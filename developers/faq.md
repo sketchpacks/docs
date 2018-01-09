@@ -16,6 +16,6 @@ You must use the [Sketchpacks Appcast feed](./publishing/appcast.md) to enable t
 
 Sketchpacks uses two workflows to build appcasts, the `push` and `release` workflows.
 If the plugin repository contains releases, then the `release` workflow will be used.
-Otherwise, the `push` workflow will be used by default.
+Otherwise, the `push` workflow will be used.
 
-See the section on [publishing appcasts](./publishing/appcast.md) for more information.
+See the section on [appcasts](./publishing/appcast.md) for more information.

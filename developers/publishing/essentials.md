@@ -1,15 +1,29 @@
-# Publishing Essentials
+# Essentials for Publishing Plugins
 
-These rules are designed to protect the data integrity of Sketchpacks, and ensure that all plugins can be correctly installed in Sketch.
+To publish plugins on Sketchpacks, your repository and plugin metadata must meet
+the following requirements.
 
-They also help ensure a baseline, so that all plugins can be easily checked for updates.
+### Repository Requirements
 
-* Plugins must use valid [semantic versioning](http://semver.org/)
-* Plugins must have a [valid manifest.json file](http://developer.sketchapp.com/guides/plugin-bundles/#manifest)
+At it's most basic level, Sketchpacks syncs with git repositories.  If Sketchpacks
+can not connect with a repository, the plugin will not be available in the registry.
+
+* Repositories must contain a [manifest.json file](http://developer.sketchapp.com/guides/plugin-bundles/#manifest).
+* Repositories may contain a [package.json file](https://github.com/skpm/skpm/blob/master/template/package.json). (optional)
+
+These basic requirements help keep the registry free of repositories that are not
+Sketch plugins.  It also helps us ensure that all plugins in the registry meet the
+same basic structure.
+
+### Plugin Requirements
+
 * Plugins must have a [globally unique identifier](http://developer.sketchapp.com/guides/plugin-bundles/#identifier)
-* [Distributable plugin bundles](./releases.md) are contained within `.zip` archive enclosures.
+* Plugins must have a valid [semantic version](http://semver.org/)
+* Plugin Releases must have a valid [semantic version](http://semver.org/)
 
-For more information, see the topics below on Semantic Versioning, Plugin Manifests, and Globally Unique Identifiers.
+These basic requirements help ensure that all plugins in the registry are unique,
+and can be accessed by their identifiers. It ensures that plugin versions can be
+correctly sorted using Semantic Versioning.
 
 ---
 

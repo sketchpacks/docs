@@ -11,11 +11,12 @@
 * Developers
   * [Publishing Sketch plugins](./developers/publishing.md)
     * [Essentials](./developers/publishing/essentials.md)
+    * [Best Practices](./developers/publishing/best-practices.md)
+    * [Appcast](./developers/publishing/appcast.md)
     * [Releases](./developers/publishing/releases.md)
     * [Badges](./developers/publishing/badges.md)
-    * [Best Practices](./developers/publishing/best-practices.md)
     * [Providing Plugin Updates](./developers/publishing/providing-plugin-updates.md)
-      * [Appcast](./developers/publishing/appcast.md)
   * [Analytics](./developers/analytics.md)
+  * [Frequently Asked Questions](./developers/faq.md)
 
 * [Sketchpacks API Reference](http://docs.sketchpacks.apiary.io)

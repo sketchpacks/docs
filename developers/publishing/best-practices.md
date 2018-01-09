@@ -1,4 +1,4 @@
-# Publishing Best Practices
+# Best Practices for Publishing Plugins
 
 Now that your plugins have met the minimum requirements, let’s go over some ways to increase their exposure on the registry.
 
