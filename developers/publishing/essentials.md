@@ -17,13 +17,22 @@ same basic structure.
 
 ### Plugin Requirements
 
-* Plugins must have a [globally unique identifier](http://developer.sketchapp.com/guides/plugin-bundles/#identifier)
+* Plugins must have a [globally unique identifier](./identifiers.md)
 * Plugins must have a valid [semantic version](http://semver.org/)
 * Plugin Releases must have a valid [semantic version](http://semver.org/)
 
 These basic requirements help ensure that all plugins in the registry are unique,
 and can be accessed by their identifiers. It ensures that plugin versions can be
 correctly sorted using Semantic Versioning.
+
+### Next Steps
+
+* [Publishing Best Practices](./publishing/best-practices.md)
+* [Providing Plugin Updates](./publishing/providing-plugin-updates.md)
+* [Plugin Identifiers](./publishing/identifiers.md)
+* [Appcast Feeds](./publishing/appcast.md)
+* [Releases](./developers/publishing/releases.md)
+* [Badges](./publishing/badges.md)
 
 ---
 

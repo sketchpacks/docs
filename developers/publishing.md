@@ -15,6 +15,7 @@ That's it!
 * [Publishing Essentials](./publishing/essentials.md)
 * [Publishing Best Practices](./publishing/best-practices.md)
 * [Providing Plugin Updates](./publishing/providing-plugin-updates.md)
+* [Plugin Identifiers](./publishing/identifiers.md)
 * [Appcast Feeds](./publishing/appcast.md)
 * [Releases](./developers/publishing/releases.md)
 * [Badges](./publishing/badges.md)
