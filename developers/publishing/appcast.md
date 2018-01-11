@@ -2,23 +2,35 @@
 
 > From Sketch v45 onwards Sketch provides an officially supported mechanism for updating plugins within the app.
 
-Sketch v45 onwards uses Sparkle Appcast feeds to update plugins. To take advantage
+Sketch v45 onwards uses Sparkle appcast feeds to update plugins. To take advantage
 of native Sketch updates, you must provide an appcast file and include it in your
 plugins manifest.
 
-Sketchpacks can help automate this process by generating the appcast for you and
-serving it from a HTTPS endpoint. To take advantage of the Sketchpacks Appcast
-feed, add the appcast API endpoint for your plugin to the `appcast` property in
-your manifest.
+Sketchpacks can automate this process for you by generating, maintaining, and
+serving your plugins appcast feed to the Sketch community. The appcast feed also
+provides analytics about your plugins activity and retention stats.
 
-The Sketchpacks API endpoint for a plugins appcast is:
+This guide will get you setup using the Sketchpacks appcast feed and measuring
+your plugins activity and retention.
 
+## Setting up your appcast feed
+
+To take advantage of the Sketchpacks Appcast feed, add our API endpoint to your
+`manifest.json` or `package.json` file under the `appcast` property.
+
+Here is the Sketchpacks API endpoint for plugin appcasts:
 ```
 https://api.sketchpacks.com/v1/plugins/:identifier/appcast
 ```
 
-For example, here is an excerpt from the manifest of the [Copy Framer Code](https://sketchpacks.com/perrysmotors/copy-framer-code)
-plugin, which is using the Sketchpacks appcast feed:
+**You must use the unique identifier for your plugin to reference the appcast feed.**
+
+Sketchpacks uses the plugin identifier in your `manifest.json` or `package.json`
+files as the `:identifier` in the API endpoints.  See the section on [plugin identifiers](./identifiers.md)
+for more information.
+
+Here is an example manifest from the plugin [Copy Framer Code](https://sketchpacks.com/perrysmotors/copy-framer-code),
+which is using the Sketchpacks appcast feed:
 
 ```json
 {
@@ -49,26 +61,23 @@ the `package.json` instead of the `manifest.json`.  For example:
 
 ## Managing your appcast feeds
 
-Sketchpacks supports two workflows for building your plugins appcast feed. If your
-plugin repository does not contain releases, then Sketchpacks will use the `push` workflow.
-If your repository does contain releases, then Sketchpacks will use the `release` workflow.
-
-> Tip: We recommended using `SKPM` and the `release` workflow to deliver your updates.
+Sketchpacks supports two workflows for building your plugins appcast, the `push` and
+`release` workflows. If your repository contains releases, Sketchpacks will use the
+`release` workflow.  Otherwise the `push` workflow will be used by default.
 
 ### Push Workflow
 
-When you push to your default branch, Sketchpacks is notified and syncs with the
-repository. To update your appcast, simply bump your plugin version and push the
-change to your default branch.
+When you push to your default branch, Sketchpacks will sync with the repository.
+To update your appcast, bump your plugin version and push the changes to your
+default branch.
 
-This workflow works well in combination with the `SKPM` or `Node.js` version bump
-commands. Allowing you an easy way to change your plugins version.
-
+You can use the `npm` versioning command:
 ```
 npm version <new-version>
+```
 
-or
-
+Or the `skpm` publish command:
+```
 skpm publish <new-version> --skip-release
 ```
 
@@ -78,7 +87,7 @@ workflow instead.
 
 > Note: Release notes are not available using the push workflow
 
-For example, here is the appcast for [PDF export](https://sketchpacks.com/DWilliames/PDF-export-sketch-plugin),
+Here is an example appcast from the plugin [PDF export](https://sketchpacks.com/DWilliames/PDF-export-sketch-plugin),
 which is using the `push` workflow:
 
 ```xml
@@ -105,8 +114,10 @@ which is using the `push` workflow:
 ### Release Workflow
 
 When you create and publish new releases in your github repository, they will
-automatically be added to your appcast feed. An easy way to do this is to
-[use SKPM to publish your releases](https://github.com/skpm/skpm#publish-the-plugin-on-the-registry).
+automatically be added to your appcast feed.
+
+We recommend that you [use SKPM to publish your releases](https://github.com/skpm/skpm#publish-the-plugin-on-the-registry).
+It simplifies building, versioning, and publishing your releases on GitHub.
 
 ```
 skpm publish <new-version>
@@ -116,7 +127,7 @@ The release workflow is great for when you need to retain older versions for use
 on old Sketch clients.  Also, it provides you with the ability to add change logs
 to your appcast feed.
 
-For example, here is the appcast for [Keys For Sketch](https://sketchpacks.com/exevil/Keys-For-Sketch),
+Here is an example appcast for the plugin [Keys For Sketch](https://sketchpacks.com/exevil/Keys-For-Sketch),
 which is using the `release` workflow:
 
 ```xml
@@ -142,60 +153,9 @@ which is using the `release` workflow:
       <pubDate>2017-10-18 18:42:02 UTC</pubDate>
       <enclosure url="https://api.sketchpacks.com/v1/plugins/com.vyacheslav-dubovitsky.KeysForSketch/download/update/0.0.0?range==0.8.6" sparkle:version="0.8.6"/>
     </item>
-    <item>
-      <title>0.8.5</title>
-      <description>
-      Fixed:
-       - #16 Conflict resolution while search is used;
-       - #19 #20 High Sierra related crashes.
-      </description>
-      <pubDate>2017-10-11 23:40:33 UTC</pubDate>
-      <enclosure url="https://api.sketchpacks.com/v1/plugins/com.vyacheslav-dubovitsky.KeysForSketch/download/update/0.0.0?range==0.8.5" sparkle:version="0.8.5"/>
-    </item>
-    <item>
-      <title>0.8.4</title>
-      <description>
-      Added:
-       + #8 "Later" button into post-update alert.
-      </description>
-      <pubDate>2017-08-17 12:14:37 UTC</pubDate>
-      <enclosure url="https://api.sketchpacks.com/v1/plugins/com.vyacheslav-dubovitsky.KeysForSketch/download/update/0.0.0?range==0.8.4" sparkle:version="0.8.4"/>
-    </item>
-    <item>
-      <title>0.8.3</title>
-      <description>
-      Fixed:
-       - #6 Canvas blinks on a start of editing text layers.
-      </description>
-      <pubDate>2017-08-17 12:14:37 UTC</pubDate>
-      <enclosure url="https://api.sketchpacks.com/v1/plugins/com.vyacheslav-dubovitsky.KeysForSketch/download/update/0.0.0?range==0.8.3" sparkle:version="0.8.3"/>
-    </item>
-    <item>
-      <title>0.8.2</title>
-      <description>
-      Fixed:
-       - #3 Crash caused by wrong parsing of user keyboard layouts.
-      </description>
-      <pubDate>2017-08-15 11:48:29 UTC</pubDate>
-      <enclosure url="https://api.sketchpacks.com/v1/plugins/com.vyacheslav-dubovitsky.KeysForSketch/download/update/0.0.0?range==0.8.2" sparkle:version="0.8.2"/>
-    </item>
-    <item>
-      <title>0.8.1</title>
-      <description>
-      Fixed:
-       - Some menus won't open its submenus;
-       - Contextual menu indicator (▾) not disappearing when cursor leaves the cell.
-      </description>
-      <pubDate>2017-08-15 11:48:29 UTC</pubDate>
-      <enclosure url="https://api.sketchpacks.com/v1/plugins/com.vyacheslav-dubovitsky.KeysForSketch/download/update/0.0.0?range==0.8.1" sparkle:version="0.8.1"/>
-    </item>
-    <item>
-      <title>0.8.0</title>
-      <description>Added:
-       + #1 Search by menu title.</description>
-      <pubDate>2017-08-14 14:30:23 UTC</pubDate>
-      <enclosure url="https://api.sketchpacks.com/v1/plugins/com.vyacheslav-dubovitsky.KeysForSketch/download/update/0.0.0?range==0.8.0" sparkle:version="0.8.0"/>
-    </item>
+
+    ... omitted for brevity ...
+
     <item>
       <title>0.7.0</title>
       <description>Initial release.</description>
