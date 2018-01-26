@@ -28,13 +28,13 @@ correctly sorted using Semantic Versioning.
 ### Plugin Configuration on Sketchpacks
 
 To configure your plugin, add a `.sketchpacks` directory to your repositories
-root path. You can use this config directory to tell Sketchpacks where to find
-your plugin's manifest and appcast files.
+root directory. You can use this config directory to tell Sketchpacks where to
+find your plugin's manifest and appcast files.
 
 * The `.sketchpacks` directory must contain a `settings.json` file
 * The `.sketchpacks/settings.json` file must use the [Sketchpacks Relay settings schema](./settings.md)
 
-> **Important**: the `.sketchpacks` config directory is not required, but if Sketchpacks
+**Important**: the `.sketchpacks` config directory is not required, but if Sketchpacks
 can not find your manifest, or finds the wrong one, you will need to correct it here.
 
 ### Next Steps

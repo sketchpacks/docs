@@ -8,6 +8,8 @@
 
 Example:
 
+**Important**: the `schema_version` and `manifest_path` properties must be present!
+
 ```json
 {
   "schema_version": "1.0.0",

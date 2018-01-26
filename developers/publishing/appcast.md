@@ -33,7 +33,7 @@ Sketchpacks appcast url for your plugin
 4. commit your changes to the repository
 5. build and publish a new plugin release
 
-> **Note**: If you do not want Sketchpacks to generate your appcast feed,
+**Note**: If you do not want Sketchpacks to generate your appcast feed,
 you can serve an appcast.xml file from your repository instead!
 
 Below is the endpoint for the Sketchpacks appcast feed. Replace the `:identifier`
@@ -85,7 +85,7 @@ custom appcast feed, using an `appcast.xml` file in your repository.
 2. set the `appcast_path` property in your [plugin's settings file](./settings.md)
 3. commit your changes to the repository
 
-> **Note**: You will need to include the Sketchpacks plugin update endpoint
+**Note**: You will need to include the Sketchpacks plugin update endpoint
 manually if you want to take advantage of the user updating insights.
 
 ### Push Workflow
