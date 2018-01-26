@@ -1,33 +1,43 @@
 # Appcast Feeds
 
-> From Sketch v45 onwards Sketch provides an officially supported mechanism for updating plugins within the app.
+Sketch v45 onwards uses [Sparkle Appcast](https://sparkle-project.org/documentation/publishing/)
+feeds to update plugins. To take advantage of native Sketch updates, you must
+provide an `appcast.xml` file and link it to your `manifest.json`. The `appcast.xml`
+file should contain all releases for your plugin, as well as urls to download each one.
 
-Sketch v45 onwards uses Sparkle appcast feeds to update plugins. To take advantage
-of native Sketch updates, you must provide an appcast file and include it in your
-plugins manifest.
-
-Sketchpacks can automate this process for you by generating, maintaining, and
+Sketchpacks can help automate this process by generating, maintaining, and
 serving your plugins appcast feed to the Sketch community. The appcast feed also
 helps provide some insight into your plugin's user activity and retention.
 
+You can also use `skpm` to automate building your appcast. Sketchpacks can be
+configured to serve your repositories `appcast.xml` instead of generating one.
+
+For more information, be sure to read the Sketch developer documentation about
+publishing plugin updates: [http://developer.sketchapp.com/guides/publishing-plugins/](http://developer.sketchapp.com/guides/publishing-plugins/)
+
 ## Appcast Essentials
 
-* you must provide a `HTTPS` url to your `appcast.xml` file
+* you must provide a `HTTPS` URL to your `appcast.xml` file
 * you must define the `appcast` property in your `manifest.json`
-* you may optionally define your `appcast` in your `package.json`
+* you may define the `appcast` property in your `package.json`
+
+For more information, be sure to read the Sketch developer documentation about
+plugin manifests and how to use appcasts: [http://developer.sketchapp.com/guides/plugin-bundles/#manifest](http://developer.sketchapp.com/guides/plugin-bundles/#manifest)
 
 ## Appcast Setup
 
 1. ensure your plugin meets [the essentials for Sketchpacks](./essentials.md)
 2. set the `appcast` property in your `manifest.json` or `package.json` to the
 Sketchpacks appcast url for your plugin
-3. (optional) add your plugin's `appcast.xml` file path to the `.sketchpacks/settings.json` file.
+3. (optional) set your plugin's `appcast.xml` path in the [Sketchpacks settings file](./settings.md).
+4. commit your changes to the repository
+5. build and publish a new plugin release
 
 > **Note**: If you do not want Sketchpacks to generate your appcast feed,
 you can serve an appcast.xml file from your repository instead!
 
-Below is the endpoint for the Sketchpacks appcast feed.  Replace `:identifier` with
-your plugin's [unique identifier](./identifiers.md).
+Below is the endpoint for the Sketchpacks appcast feed. Replace the `:identifier`
+with your plugin's [unique identifier](./identifiers.md).
 
 ```
 https://api.sketchpacks.com/v1/plugins/:identifier/appcast
@@ -45,7 +55,7 @@ Example `manifest.json`:
 }
 ```
 
-Example `package.json` if you are using `SKPM`:
+Example `package.json` if you are using `skpm`:
 
 ```json
 {
