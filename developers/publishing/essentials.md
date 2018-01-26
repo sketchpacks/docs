@@ -22,18 +22,25 @@ same basic structure.
 * Plugin Releases must have a valid [semantic version](http://semver.org/)
 
 These basic requirements help ensure that all plugins in the registry are unique,
-and can be accessed by their identifiers. It ensures that plugin versions can be
+and can be accessed by their identifiers. It also ensures that plugin versions can be
 correctly sorted using Semantic Versioning.
+
+### Plugin Configuration on Sketchpacks
+
+To configure your plugin, add a `.sketchpacks` directory to your repositories
+root path. You can use this config directory to tell Sketchpacks where to find
+your plugin's manifest and appcast files.
+
+* The `.sketchpacks` directory must contain a `settings.json` file
+* The `.sketchpacks/settings.json` file must use the [Sketchpacks Relay settings schema](./settings.md)
+
+> **Important**: the `.sketchpacks` config directory is not required, but if Sketchpacks
+can not find your manifest, or finds the wrong one, you will need to correct it here.
 
 ### Next Steps
 
-* [Publishing best practices](./best-practices.md)
 * [Choose a plugin identifier](./identifiers.md)
-* [Provide plugin updates](./providing-plugin-updates.md)
-* [Automate your appcast feed](./appcast.md)
-* [Include change logs in your releases](./releases.md)
-* [Add status badges to your readme](./badges.md)
-* [Monitor your plugins activity](./../analytics.md)
+* [Learn more about configuring your plugin](./settings.md)
 
 
 ---
