@@ -13,10 +13,11 @@
     * [Essentials](./developers/publishing/essentials.md)
     * [Best Practices](./developers/publishing/best-practices.md)
     * [Updating Plugins](./developers/publishing/providing-plugin-updates.md)
-    * [Identifiers](./developers/publishing/identifiers.md)
     * [Appcast](./developers/publishing/appcast.md)
-    * [Releases](./developers/publishing/releases.md)
     * [Badges](./developers/publishing/badges.md)
+    * [Identifiers](./developers/publishing/identifiers.md)
+    * [Releases](./developers/publishing/releases.md)
+    * [Settings](./developers/publishing/settings.md)
   * [Analytics](./developers/analytics.md)
   * [Frequently Asked Questions](./developers/faq.md)
 

@@ -36,7 +36,7 @@ Sketchpacks will check for identifiers using the following order:
 1. manifest identifier
 2. package skpm identifier
 
-If an identifier can not be found, the plugin will not be inserted into the registry.
+**If an identifier can not be found, the plugin will not be inserted into the registry.**
 
 ### Using identifiers in the Sketchpacks API
 
@@ -69,8 +69,4 @@ in the registry.
 
 ### Next Steps
 
-* [Provide plugin updates](./providing-plugin-updates.md)
-* [Automate your appcast feed](./appcast.md)
-* [Include change logs in your releases](./releases.md)
-* [Add status badges to your readme](./badges.md)
-* [Monitor your plugins activity](./../analytics.md)
+* [Configure your plugins manifest path](./settings.md)
