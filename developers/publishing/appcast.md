@@ -8,43 +8,44 @@ plugins manifest.
 
 Sketchpacks can automate this process for you by generating, maintaining, and
 serving your plugins appcast feed to the Sketch community. The appcast feed also
-provides analytics about your plugins activity and retention stats.
+helps provide some insight into your plugin's user activity and retention.
 
-This guide will get you setup using the Sketchpacks appcast feed and measuring
-your plugins activity and retention.
+## Appcast Essentials
 
-## Setting up your appcast feed
+* you must provide a `HTTPS` url to your `appcast.xml` file
+* you must define the `appcast` property in your `manifest.json`
+* you may optionally define your `appcast` in your `package.json`
 
-To take advantage of the Sketchpacks Appcast feed, add our API endpoint to your
-`manifest.json` or `package.json` file under the `appcast` property.
+## Appcast Setup
 
-Here is the Sketchpacks API endpoint for plugin appcasts:
+1. ensure your plugin meets [the essentials for Sketchpacks](./essentials.md)
+2. set the `appcast` property in your `manifest.json` or `package.json` to the
+Sketchpacks appcast url for your plugin
+3. (optional) add your plugin's `appcast.xml` file path to the `.sketchpacks/settings.json` file.
+
+> **Note**: If you do not want Sketchpacks to generate your appcast feed,
+you can serve an appcast.xml file from your repository instead!
+
+Below is the endpoint for the Sketchpacks appcast feed.  Replace `:identifier` with
+your plugin's [unique identifier](./identifiers.md).
+
 ```
 https://api.sketchpacks.com/v1/plugins/:identifier/appcast
 ```
 
-**You must use the unique identifier for your plugin to reference the appcast feed.**
+### Setup Examples
 
-Sketchpacks uses the plugin identifier in your `manifest.json` or `package.json`
-files as the `:identifier` in the API endpoints.  See the section on [plugin identifiers](./identifiers.md)
-for more information.
-
-Here is an example manifest from the plugin [Copy Framer Code](https://sketchpacks.com/perrysmotors/copy-framer-code),
-which is using the Sketchpacks appcast feed:
+Example `manifest.json`:
 
 ```json
 {
-  "name" : "Copy Framer Code",
-  "identifier" : "com.gilesperry.copy-framer-code",
-  "version" : "3.1.1",
-  "homepage": "https://github.com/perrysmotors/copy-framer-code",
-  "author" : "Giles Perry",
-  "appcast": "https://api.sketchpacks.com/v1/plugins/com.gilesperry.copy-framer-code/appcast",
+  "name" : "My Awesome Plugin",
+  "identifier" : "my.awesome.plugin",
+  "appcast": "https://api.sketchpacks.com/v1/plugins/my.awesome.plugin/appcast"
 }
 ```
 
-If you are using `SKPM` to build your plugins, you can set the `appcast` url in
-the `package.json` instead of the `manifest.json`.  For example:
+Example `package.json` if you are using `SKPM`:
 
 ```json
 {
@@ -52,18 +53,30 @@ the `package.json` instead of the `manifest.json`.  For example:
     "name": "awesome-plugin",
     "title": "My Awesome Plugin",
     "manifest": "src/manifest.json",
-    "main": "awesome-plugin.sketchplugin",
     "identifier": "my.awesome.plugin",
-    "appcast": "https://api.sketchpacks.com/v1/plugins/my.awesome.plugin/appcast"
+    "appcast": "https://api.sketchpacks.com/v1/plugins/my.awesome.plugin/appcast",
+    "main": "awesome-plugin.sketchplugin"
   }
 }
 ```
 
-## Managing your appcast feeds
+## Managing your appcast feed
 
 Sketchpacks supports two workflows for building your plugins appcast, the `push` and
 `release` workflows. If your repository contains releases, Sketchpacks will use the
 `release` workflow.  Otherwise the `push` workflow will be used by default.
+
+If you do not want Sketchpacks to generate your appcast feed, you can define a
+custom appcast feed, using an `appcast.xml` file in your repository.
+
+### Custom Appcast Feed
+
+1. ensure your repository has an `appcast.xml` file present
+2. set the `appcast_path` property in your [plugin's settings file](./settings.md)
+3. commit your changes to the repository
+
+> **Note**: You will need to include the Sketchpacks plugin update endpoint
+manually if you want to take advantage of the user updating insights.
 
 ### Push Workflow
 
