@@ -1,37 +1,53 @@
 # Unique Plugin Identifiers
 
-Plugin identifiers must meet the following requirements:
+Sketch as well as Sketchpacks needs a unique identifier to track your plugin. You
+can define your plugin's `identifier` in the `manifest.json` or `package.json` file.
 
-* Must be unique
-* Must contain only alpha-numeric characters, "-", "\_", and periods.
+From the Sketch developer documentation: http://developer.sketchapp.com/guides/plugin-bundles/#manifest
 
-> Tip: Use reverse-domain syntax for an easily unique identifier. ex: com.sketchpacks.awesome-plugin
+> **Identifier**
+> A string specifying a unique identifier for the Plugin.
+> Reverse-domain syntax is strongly encouraged, for example com.example.sketch.shape-plugins.
+> Sketch uses this string internally to track the Plugin, store settings for it, etc.
 
-> Warning: You can not migrate your plugin identifiers at this time.  We are working
-on a solution for this, and will deploy it ASAP.
+## Requirements
 
-### Defining a plugin identifier
+* you must provide a unique plugin identifier
+* you must provide a identifier with only alpha-numeric characters, "-", "\_", and periods
+* you must define the `identifier` property in the `manifest.json`
+* you may define the `identifier` property in the `package.json`
 
-You can set the identifier for a plugin in the `manifest.json`
+> **Warning**: You can not migrate your plugin identifiers at this time.  We are working
+on a solution for this, and will deploy it ASAP!
+
+### Setup Examples
+
+Example `manifest.json`:
 
 ```json
 {
-  "identifier": "my.plugin.identifier"
+  "name" : "My Awesome Plugin",
+  "identifier" : "my.awesome.plugin",
+  "appcast": "https://api.sketchpacks.com/v1/plugins/my.awesome.plugin/appcast"
 }
 ```
 
-Or, if you are using SKPM, you can set the identifier in the `skpm` property
-in the `package.json`
+Example `skpm` settings in the `package.json`:
 
 ```json
 {
   "skpm": {
-    "identifier": "my.plugin.identifier"
+    "name": "awesome-plugin",
+    "title": "My Awesome Plugin",
+    "manifest": "src/manifest.json",
+    "identifier": "my.awesome.plugin",
+    "appcast": "https://api.sketchpacks.com/v1/plugins/my.awesome.plugin/appcast",
+    "main": "awesome-plugin.sketchplugin"
   }
 }
 ```
 
-Sketchpacks will check for identifiers using the following order:
+Sketchpacks will check for plugin identifiers using the following order:
 
 1. manifest identifier
 2. package skpm identifier
