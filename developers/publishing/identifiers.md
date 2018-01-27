@@ -17,9 +17,6 @@ From the Sketch developer documentation: http://developer.sketchapp.com/guides/p
 * you must define the `identifier` property in the `manifest.json`
 * you may define the `identifier` property in the `package.json`
 
-> **Warning**: You can not migrate your plugin identifiers at this time.  We are working
-on a solution for this, and will deploy it ASAP!
-
 ### Setup Examples
 
 Example `manifest.json`:
@@ -85,4 +82,4 @@ in the registry.
 
 ### Next Steps
 
-* [Configure your plugins manifest path](./settings.md)
+* [Learn how to configure your plugin](./settings.md)

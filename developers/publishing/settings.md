@@ -50,7 +50,6 @@ Example:
 
 ### Next Steps
 
-* [Ensure your plugin has a unique identifier](./identifiers.md)
 * [Learn more about managing your appcast feed](./appcast.md)
 
 

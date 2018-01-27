@@ -39,7 +39,7 @@ can not find your manifest, or finds the wrong one, you will need to correct it 
 
 ### Next Steps
 
-* [Choose a plugin identifier](./identifiers.md)
+* [Choose a unique plugin identifier](./identifiers.md)
 * [Learn more about configuring your plugin](./settings.md)
 
 
