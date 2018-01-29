@@ -6,8 +6,6 @@
 2. create a `.sketchpacks/settings.json` file to define your plugin settings
 3. use the `Sketchpacks Relay - Core Settings Schema 1.0.0` to define your settings
 
-Example:
-
 **Important**: the `schema_version` and `manifest_path` properties must be present!
 
 ```json

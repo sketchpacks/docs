@@ -1,34 +1,56 @@
 # Providing Plugin Updates
 
-With [Sketchpacks Relay]({{ book.relayURL }}) installed on your plugins' Github repos, providing updates is simple.
+With [Sketchpacks Relay]({{ book.relayURL }}) installed on your plugins' Github
+repos, providing updates is simple. When you `push` or `release` changes to your
+repository, Sketchpacks will automatically deliver those updates to your users.
 
-## Native Sketch plugin updates
+## Managing your plugin updates
 
-The latest [Sketch beta](http://sketchplugins.com/d/229-updating-plugins) allows for plugin updates right from within Sketch itself. 👏🏽
+Sketchpacks supports two workflows for releasing your plugin's updates, the `push` and
+`release` workflows. If your repository contains releases, Sketchpacks will use the
+`release` workflow.  Otherwise the `push` workflow will be used by default.
 
-Allowing your users to apply updates from within Sketch is done by simply adding a new property, `appcast`, to your `manifest.json` file.
+### Push Workflow
 
+When you `push` to your default branch, Sketchpacks will check if your plugins `version`
+has changed. The new `version` will be updated in your plugin's `appcast` feed and
+the next time your user's check for updates, it will be available to them.
+
+We suggest that you use a command line tool to help with versioning your plugins.
+For example, you can use `npm`:
 
 ```
-// content omitted for brevity
-
-{
-  name: "Awesome Sketch Plugin",
-  identifier: "com.sketchpacks.awesome-plugin",
-  appcast: "https://api.sketchpacks.com/v1/plugins/com.sketchpacks.awesome-plugin/appcast"  
-}
+npm version <new-version>
 ```
-You may use the Appcast API Endpoint provided by the [Sketchpacks API]({{ book.apiDocsUrl }}) to [serve your plugins' Appcast feed](./appcast.md).
 
-All your semantically versioned release assets published on Github will be available to all Appcast feed consumers.
+Or, you can use `skpm` to bump your plugin's `version`:
 
-[Try out the Appcast API endpoint](http://docs.sketchpacks.apiary.io/#reference/plugins/v1pluginsidentifierappcast/fetch-the-appcast-xml-for-a-plugins-releases)
+```
+skpm publish <new-version> --skip-release
+```
 
-## Auto-updates within Sketchpacks
+**Important** using this workflow, you will only ever have one `HEAD` release in
+your appcast. If you need to support multiple Sketch versions, we suggest using the
+release workflow.
 
-If you have [Sketchpacks Relay]({{ book.relayURL }}) installed on your plugins' Github repos, then you're all set.
+### Release Workflow
 
-Sketchpacks will provide the users' desired level of updates by setting their lock strength to apply patch- and minor-level updates. Fully unlocked plugins will apply all updates.
+When you create and publish new releases in your github repository, they will
+automatically be added to your appcast feed. The next time your user's check for
+updates, the new release will be available to them.
+
+We recommend that you [use SKPM to publish your releases](https://github.com/skpm/skpm#publish-the-plugin-on-the-registry).
+It simplifies building, versioning, and publishing your releases on GitHub.
+
+```
+skpm publish <new-version>
+```
+
+## Auto-updates within the Sketchpacks desktop client
+
+Sketchpacks will provide the users' desired level of updates by setting their
+lock strength to apply patch- and minor-level updates. Fully unlocked plugins
+will apply all updates.
 
 ### Next Steps
 
