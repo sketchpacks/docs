@@ -11,7 +11,7 @@ activity and retention!
 
 1. Ensure your plugin meets the [essentials for Sketchpacks](./publishing/essentials.md)
 2. Create a [settings file](./publishing/settings.md) in your repository's root directory
-3. Define a [unique identifier](./identifiers.md) for your plugin in the `manifest.json`
+3. Define a [unique identifier](./publishing/identifiers.md) for your plugin in the `manifest.json`
 4. Install [Sketchpacks Relay]({{ book.relayURL }}) on your plugin repository
 5. Done! Start building and publishing releases for your users!
 
