@@ -1,4 +1,4 @@
-# Publish & Measure with Sketchpacks Relay
+# Publish Plugins with Sketchpacks Relay
 
 ## Setup your repository
 
