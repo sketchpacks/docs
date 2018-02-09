@@ -2,9 +2,8 @@
 
 ## Setup
 
-1. create a `.sketchpacks` directory in your repositories root directory
-2. create a `.sketchpacks/settings.json` file to define your plugin settings
-3. use the `Sketchpacks Relay - Core Settings Schema 1.0.0` to define your settings
+- Create a `.sketchpacks.json` settings file in your repositories root directory
+- Use the `Sketchpacks Relay - Core Settings Schema 1.0.0` to define your settings
 
 **Important**: the `schema_version` and `manifest_path` properties must be present!
 
