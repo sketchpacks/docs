@@ -28,7 +28,7 @@ Below is an example `.sketchpacks.json` file for your repository
 
 #### Example Plugin Manifest
 
-Use the Sketchpacks appcast API endpoint for your plugin
+Use the Sketchpacks appcast API endpoint for your plugin's appcast
 
 ```
 https://api.sketchpacks.com/v1/plugins/:identifier/appcast
