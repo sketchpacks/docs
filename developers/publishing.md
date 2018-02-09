@@ -1,4 +1,4 @@
-# Publish & Measure your Plugins with Sketchpacks Relay
+# Publish & Measure with Sketchpacks Relay
 
 ## Setup your repository
 
@@ -16,6 +16,8 @@ keep it up-to-date in the registry
 
 #### Example Settings File
 
+Below is an example `.sketchpacks.json` file for your repository
+
 ```json
 {
   "schema_version": "1.0.0",
@@ -32,7 +34,7 @@ Use the Sketchpacks appcast API endpoint for your plugin
 https://api.sketchpacks.com/v1/plugins/:identifier/appcast
 ```
 
-Use your plugin's unique identifier for the `:identifier` parameter
+Use your plugin's [unique identifier](./publishing/identifiers.md) for the `:identifier` parameter
 
 ```json
 {
